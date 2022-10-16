@@ -361,7 +361,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 750, y: 470}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &355977088
 MonoBehaviour:
@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 365885172}
   m_Layer: 5
   m_Name: ButtonOfCharacters
-  m_TagString: Untagged
+  m_TagString: TabButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -497,7 +497,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -508,9 +508,9 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: c9298cbae74bcc347a8c7d1d6119ee02, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: c9298cbae74bcc347a8c7d1d6119ee02, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: c02f5f046a1695a49b408e1782662ce7, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -554,7 +554,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c9298cbae74bcc347a8c7d1d6119ee02, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c02f5f046a1695a49b408e1782662ce7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 527333902}
   m_Layer: 5
   m_Name: ScrollOfCharacters
-  m_TagString: Untagged
+  m_TagString: TabScroll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -708,11 +708,11 @@ GameObject:
   - component: {fileID: 584438730}
   m_Layer: 5
   m_Name: ScrollOfSaved
-  m_TagString: Untagged
+  m_TagString: TabScroll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &584438729
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1249,6 +1249,8 @@ MonoBehaviour:
   CharacterScroll: {fileID: 527333900}
   SavedScroll: {fileID: 584438728}
   AnimationScroll: {fileID: 1330364426}
+  ButtonPressImage: {fileID: 21300000, guid: c9298cbae74bcc347a8c7d1d6119ee02, type: 3}
+  ButtonDisableImage: {fileID: 21300000, guid: c02f5f046a1695a49b408e1782662ce7, type: 3}
 --- !u!1 &675228701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,7 +1289,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 750, y: 470}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &675228703
 MonoBehaviour:
@@ -1629,10 +1631,10 @@ RectTransform:
   m_Father: {fileID: 675228702}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 190, y: -235}
-  m_SizeDelta: {x: 360, y: 450}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &858020138
 MonoBehaviour:
@@ -1654,7 +1656,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Yet to be implemented!
+  m_text: Panel for animations display
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1962,7 +1964,7 @@ GameObject:
   - component: {fileID: 1046759950}
   m_Layer: 5
   m_Name: ButtonOfAnimations
-  m_TagString: Untagged
+  m_TagString: TabButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2006,7 +2008,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2017,9 +2019,9 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: c9298cbae74bcc347a8c7d1d6119ee02, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: c9298cbae74bcc347a8c7d1d6119ee02, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: c02f5f046a1695a49b408e1782662ce7, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -2096,11 +2098,11 @@ GameObject:
   - component: {fileID: 1330364428}
   m_Layer: 5
   m_Name: ScrollOfAnimations
-  m_TagString: Untagged
+  m_TagString: TabScroll
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1330364427
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2653,7 +2655,7 @@ GameObject:
   - component: {fileID: 1970802634}
   m_Layer: 5
   m_Name: ButtonOfSaved
-  m_TagString: Untagged
+  m_TagString: TabButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2697,7 +2699,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2708,9 +2710,9 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: c9298cbae74bcc347a8c7d1d6119ee02, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: c9298cbae74bcc347a8c7d1d6119ee02, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: c02f5f046a1695a49b408e1782662ce7, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted

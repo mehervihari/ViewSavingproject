@@ -14,7 +14,6 @@ public class ElementsLoader : MonoBehaviour
 
     public string CharactersHtmlCode;
     public int characterCount_click = 0;
-    //public int savedCount_click = 0;
 
     public List<GameObject> characterImageList = new List<GameObject>();
 
@@ -40,13 +39,7 @@ public class ElementsLoader : MonoBehaviour
                 LoadCharacterImages(tex, imgLink);
             });
         }
-        //LoadAnimationImages();
         characterCount_click++;
-    }
-
-    public void CallTexture(string error)
-    {
-        Debug.Log("Error occured to parse image: " + error);
     }
 
     private void LoadCharacterImages(Texture2D texture2D, string link)
@@ -65,7 +58,6 @@ public class ElementsLoader : MonoBehaviour
     {
         DestroyChildObjects(SavedPanelParent);
 
-        Debug.Log("loading the saved/ downloaded images");
         for (int i = 0; i < characterImageList.Count; i++)
         {
             if(characterImageList[i].GetComponent<CharacterDetail>().isDownloaded)
@@ -94,7 +86,6 @@ public class ElementsLoader : MonoBehaviour
             Debug.Log("Error occured to parse image: " + error);
         }, (Texture2D tex) =>
         {
-
             LoadCharacterImages(tex, link);
         });
     }*/
