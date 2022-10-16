@@ -63,8 +63,7 @@ public static class WebRequests
             }
             else
             {
-                DownloadHandlerTexture downloadHandlerTexture = webRequest.downloadHandler as DownloadHandlerTexture;
-                onSuccess(downloadHandlerTexture.texture);
+                onSuccess(DownloadHandlerTexture.GetContent(webRequest));
             }
         }
     }
